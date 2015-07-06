@@ -43,6 +43,7 @@ Once there there are several options on how to run the program.
 
 ###Input
 - A directory of bags (folders) to run DROID's analysis on.
+
 ###Output
 - A .droid file containing DROID's analysis in each bag.
 - A .csv file containing DROID's analysis in each bag.
