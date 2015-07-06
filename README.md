@@ -5,7 +5,7 @@ This is a program to automatically run DROID on a set of files contained within 
 DroidRunner takes a top directory and will run DROID on all of the bags contained within, placing the output files in BAGNAME/data/meta.
 DroidRunner will produce a droid.droid file, a droid.csv file, and a droid.pdf file.
 
-Once you have run DroidRunner once it will store the path to your droid files
+Once you have run DroidRunner once it will store the path to your droid files.
 
 ##DROID: Digital Record Object Identification
 DROID is a software tool developed by The National Archives to perform automated batch identification of file formats.
@@ -48,4 +48,4 @@ Once there there are several options on how to run the program.
 - A .droid file containing DROID's analysis in each bag.
 - A .csv file containing DROID's analysis in each bag.
 - A .pdf file containing DROID's analysis in each bag.
-- If it does not already exist, a file named froid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files
+- If it does not already exist, a file named froid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files.
