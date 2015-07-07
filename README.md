@@ -49,6 +49,8 @@ Instructions on setting up Pyton on your computer can be found here: https://app
 
 ##Usage:
 First navigate in your terminal to the folder in which DroidRunner.py is contained.
+- cd PATH_TO_FOLDER_CONTAINING_DROIDRUNNER
+
 Once there there are several options on how to run the program.
 
 - python DroidRunner.py (option)
