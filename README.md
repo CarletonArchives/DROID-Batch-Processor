@@ -48,6 +48,9 @@ Instructions on setting up Pyton on your computer can be found here: https://app
 
 
 ##Usage:
+
+(Mac) Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon
+
 First navigate in your terminal to the folder in which DroidRunner.py is contained.
 - cd PATH_TO_FOLDER_CONTAINING_DROIDRUNNER
 
