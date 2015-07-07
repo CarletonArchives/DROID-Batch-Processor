@@ -1,7 +1,7 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [DROID-Batch-Processor](#)
-	- [DROID: Digital Record Object Identification](#)
+	- [DROID: Digital Record Object Identification](##)
 	- [Installing DROID (MAC)](#)
 	- [Java Versions and DROID](#)
 	- [Java runtime environment setup, required for PC](#)
