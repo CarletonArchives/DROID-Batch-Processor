@@ -41,7 +41,7 @@ or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=e
 
 - Install Java runtime environment
   - Check to see if Java is already installed on your computer. 
-  - Go to Start-> setting->control panel
+  - Go to Start->control panel
   - If Java is present in the control panel, proceed to the section on setting the Java_home environmental variable.  
   - If not download and install Java from the Oracle website or from java.com
 - Identifying the JAVA_HOME environmental variable path value
