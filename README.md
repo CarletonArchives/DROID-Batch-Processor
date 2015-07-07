@@ -12,8 +12,6 @@ DROID is a software tool developed by The National Archives to perform automated
 
 This program is tested with DROID 6.0.1, which can be found at http://sourceforge.net/projects/droid
 
-Instructions to install DROID can be found at https://wiki.carleton.edu/display/ds/DROID+-+Digital+Record+Object+Identification
-
 ##Installing DROID (MAC)
 
 - Locate "droid-6.01.zip" in your downloads folder.
