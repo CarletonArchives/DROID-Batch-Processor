@@ -19,6 +19,7 @@ DROID 6.0.1 requires Java 6 to run
 If you experience errors with DROID running, and you are using a newer version of Java, try uninstalling Java, and installing Java 6.
 
 Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
+or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
 
 ##Installing Python
 You will need Python installed on your computer to run this program.
