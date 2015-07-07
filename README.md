@@ -16,13 +16,20 @@ Instructions to install DROID can be found at https://wiki.carleton.edu/display/
 
 ##Installing DROID (MAC)
 
-1.) Locate "droid-6.01.zip" in your downloads folder.
-2.) Double click to create the folder "droid-6.01". Drag this to the desktop
-3.) Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon.
-4.) In the terminal window, type the following commands exactly as they appear, hitting "return" after each line.
+-Locate "droid-6.01.zip" in your downloads folder.
+
+-Double click to create the folder "droid-6.01". Drag this to the desktop
+
+-Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon.
+
+-In the terminal window, type the following commands exactly as they appear, hitting "return" after each line.
+
 cd Desktop/droid-6.01
+
 chmod +x droid.sh
+
 chmod +x droid-ui-6.0.jar
+
 chmod +x droid-command-line-6.0.jar
 
 ##Java Versions and DROID
