@@ -99,9 +99,9 @@ First navigate in your terminal to the folder in which DroidRunner.py is contain
 
         cd PATH_TO_FOLDER_CONTAINING_DROIDRUNNER
 
-Once there there are several options on how to run the program.
+There there are several options on how to run the program:
 
-        python DroidRunner.py (option)
+        python DroidRunner.py <option>
         
   - Options are -h or --help 
   - This will display a usage message.
