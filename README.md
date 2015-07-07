@@ -37,8 +37,13 @@ If you experience errors with DROID running, and you are using a newer version o
 Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
 or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
 
-##Java runtime environment setup, required for PC
+To check what version of Java (if any) you have installed on your computer, in the command prompt type:
 
+      java -version
+
+If you are running Java 6, the version should be 1.6.(###)
+
+###Java runtime environment setup, required for PC
 - Install Java runtime environment
   - Check to see if Java is already installed on your computer. 
   - Go to Start->control panel
@@ -50,6 +55,18 @@ or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=e
   - Select the Java tab in the Java Control Panel.
   - Select View.
   - The value of JAVA_HOME should be everything in the path field before the bin directory.  For example, if the value of the path field is C:\Program Files\Java\jre6\bin\javaw.exe, then the variable value should be C:\Program Files\Java\jre6
+
+####Setting up environment variables using the command line:
+-This method is good if you want to run both Java 6 and a newer version of Java on your computer
+-In the command prompt enter this command:
+
+      set JAVA_HOME=C:\<enter value of JAVA_HOME found above here>
+  
+-Then to make sure the PATH variable is set correctly enter the following into the command prompt:
+
+     set PATH=%JAVA_HOME%\bin;%PATH%
+
+####Setting up JAVA_HOME by hand:
 - Configuring the Java_home environment variable
   - Right click on My computer, select Properties/advanced/environmental properties
   - Scroll down and look for a variable named JAVA_HOME.
