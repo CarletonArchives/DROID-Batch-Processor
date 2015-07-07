@@ -96,23 +96,33 @@ Instructions on setting up Pyton on your computer can be found here: https://app
 (PC) Open a command prompt by selecting Start/Run and typing cmd and Enter or Start/Programs/Accessories/Command Prompt.
 
 First navigate in your terminal to the folder in which DroidRunner.py is contained.
-- cd PATH_TO_FOLDER_CONTAINING_DROIDRUNNER
+
+        cd PATH_TO_FOLDER_CONTAINING_DROIDRUNNER
 
 Once there there are several options on how to run the program.
 
-- python DroidRunner.py (option)
+        python DroidRunner.py (option)
+        
   - Options are -h or --help 
   - This will display a usage message.
 
-- python DroidRunner.py:
+
+        python DroidRunner.py
+     
   - Running with no arguments will prompt you for the required paths.
 
-- python DroidRunner.py <path to files to validate>:
+
+        python DroidRunner.py <path to files to validate>
+        
   - If you have run the program before, or if you have added the location of your DROID files to the droid_settings.txt file, this will automatically run.
   - If you have not already supplied the program with the location of your DROID files, the program will prompt you for the path.
   - Upon prompting you for the path to the DROID files, the program will save their location for future use.
 
-- python DroidRunner.py <path to files to validate> <path to Droid Files>:
+
+        python DroidRunner.py <path to files to validate> <path to Droid Files>
+
+
+
   - This will run the program without needing to prompt the user for any paths
   - The supplied path to the DROID files will be added to the settings file.
 
