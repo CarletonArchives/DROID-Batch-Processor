@@ -1,15 +1,3 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
-- [DROID-Batch-Processor](#)
-	- [DROID: Digital Record Object Identification](##)
-	- [Installing DROID (MAC)](#)
-	- [Java Versions and DROID](#)
-	- [Java runtime environment setup, required for PC](#)
-	- [Installing Python](#)
-	- [Usage:](#)
-		- [Input](#)
-		- [Output](#)
-
 # DROID-Batch-Processor
 Code by Caitlin Donahue caitlindonahue95@gmail.com
 
