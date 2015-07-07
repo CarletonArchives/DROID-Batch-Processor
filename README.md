@@ -36,6 +36,33 @@ Instructions to install DROID can be found at https://wiki.carleton.edu/display/
 DROID 6.0.1 requires Java 6 to run
 If you experience errors with DROID running, and you are using a newer version of Java, try uninstalling Java, and installing Java 6.
 
+- Install Java runtime environment
+  - Check to see if Java is already installed on your computer. 
+  - Go to Start-> setting->control panel
+  - If Java is present in the control panel, proceed to the section on setting the Java_home environmental variable.  
+  - If not download and install Java from the Oracle website or from java.com
+- Identifying the JAVA_HOME environmental variable path value
+  - If you already know the value of the path for java_home on your computer, proceed to the section for setting the value of this variable. 
+  - If you do not know this value, go to Start/Control Panel/Java
+  - Select the Java tab in the Java Control Panel.
+  - Select View.
+  - The value of JAVA_HOME should be everything in the path field before the bin directory.  For example, if the value of the path field is C:\Program Files\Java\jre6\bin\javaw.exe, then the variable value should be C:\Program Files\Java\jre6
+- Configuring the Java_home environment variable
+  - Right click on My computer, select Properties/advanced/environmental properties
+  - Scroll down and look for a variable named JAVA_HOME.
+  - If a variable is present, make sure it matches the path from the section above on identifying the JAVA_HOME path
+  - If no JAVA_HOME variable is present, click New. 
+  - The name of the variable should be: JAVA_HOME.
+  - The value of the variable should be the path from the section above on identifying the JAVA_HOME path
+  - Hit OK.
+- Check that the JAVA_HOME variable is set properly 
+  - Go to Start/Run 
+  - enter cmd in the Run window.
+  - Once a command prompt is open, enter Set and hit return
+  - This will give a list of all the environmental variables available to this user.
+  - JAVA_HOME should be in this list and its value should be the path you identified and entered above. 
+  - If JAVA_HOME is not present or has the wrong value assigned, make sure that all the steps above have been followed correctly.  
+
 Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
 or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
 
