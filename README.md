@@ -39,7 +39,7 @@ If you experience errors with DROID running, and you are using a newer version o
 Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
 or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
 
-##Installation for PC
+##JAVA Setup, required for PC
 
 - Install Java runtime environment
   - Check to see if Java is already installed on your computer. 
@@ -74,7 +74,6 @@ Python can be found here: https://www.python.org/download/releases/2.7.5/
 or here: https://www.python.org/download/releases/3.2.2/
 
 Instructions on setting up Pyton on your computer can be found here: https://apps.carleton.edu/curricular/cs/resources/source/python_install/
-
 
 ##Usage:
 
