@@ -39,7 +39,7 @@ If you experience errors with DROID running, and you are using a newer version o
 Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
 or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
 
-##JAVA Setup, required for PC
+##Java runtime environment setup, required for PC
 
 - Install Java runtime environment
   - Check to see if Java is already installed on your computer. 
