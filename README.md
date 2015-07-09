@@ -10,40 +10,45 @@ Once you have run DroidRunner once it will store the path to your droid files.
 ##DROID: Digital Record Object Identification
 DROID is a software tool developed by The National Archives to perform automated batch identification of file formats.
 
-This program is tested with DROID 6.0.1, which can be found at http://sourceforge.net/projects/droid
+You can download the newest version of DROID at http://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/
+(Make sure to download the binary file, not the source code).
 
 ##Installing DROID (MAC)
 
-- Locate "droid-6.01.zip" in your downloads folder.
+- Locate the file "droid-binary-6.1.5-bin.zip" in your downloads folder.
 
-- Double click to create the folder "droid-6.01". Drag this to the desktop
+- Double click to create the folder "droid-binary-6.1.5-bin". Drag this to the desktop
 
 - Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon.
 
 - In the terminal window, type the following commands exactly as they appear, hitting "return" after each line.
 
-  - cd Desktop/droid-6.01
+  - cd Desktop/droid-binary-6.1.5-bin
   
   - chmod +x droid.sh
   
-  - chmod +x droid-ui-6.0.jar
+  - chmod +x droid-ui-6.1.5.jar
   
-  - chmod +x droid-command-line-6.0.jar
+  - chmod +x droid-command-line-6.1.5.jar
 
 ##Java Versions and DROID
-DROID 6.0.1 requires Java 6 to run
-If you experience errors with DROID running, and you are using a newer version of Java, try uninstalling Java, and installing Java 6.
+DROID 6.1.5 requires Java 7 to run
+If you experience errors with DROID running, and you are using a different version of Java, download and install Java 7.
 
-Java 6 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
-or (for Mac) here: https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US
+Java 7 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 To check what version of Java (if any) you have installed on your computer, in the command prompt type:
 
       java -version
 
-If you are running Java 6, the version should be 1.6.(###)
+If you are running the most recent version of Java 7, the version should be 1.7.0_79.
 
-###Java runtime environment setup, required for PC
+If you want to run Java 7 for only this program, and keep your current version of Java as the default, Go to the section *Temporary Java environment setup*.
+If you want to run Java 7 for all programs, uninstall your current version of Java, and install Java 7. If you are using a Windows computer, follow the instructions under *Java runtime environment setup (PC)*
+
+
+###Java runtime environment setup (PC)
+####Finding the JAVA_HOME Variable:
 - Install Java runtime environment
   - Check to see if Java is already installed on your computer. 
   - Go to Start->control panel
@@ -55,19 +60,7 @@ If you are running Java 6, the version should be 1.6.(###)
   - Select the Java tab in the Java Control Panel.
   - Select View.
   - The value of JAVA_HOME should be everything in the path field before the bin directory.  For example, if the value of the path field is C:\Program Files\Java\jre6\bin\javaw.exe, then the variable value should be C:\Program Files\Java\jre6
-
-####Setting up environment variables using the command line:
--This method is good if you want to run both Java 6 and a newer version of Java on your computer
--In the command prompt enter this command:
-
-      set JAVA_HOME=C:\<enter value of JAVA_HOME found above here>
-  
--Then to make sure the PATH variable is set correctly enter the following into the command prompt:
-
-     set PATH=%JAVA_HOME%\bin;%PATH%
-
-####Setting up JAVA_HOME by hand:
-- Configuring the Java_home environment variable
+#### Configuring the Java_home environment variable:
   - Right click on My computer, select Properties/advanced/environmental properties
   - Scroll down and look for a variable named JAVA_HOME.
   - If a variable is present, make sure it matches the path from the section above on identifying the JAVA_HOME path
@@ -82,6 +75,35 @@ If you are running Java 6, the version should be 1.6.(###)
   - This will give a list of all the environmental variables available to this user.
   - JAVA_HOME should be in this list and its value should be the path you identified and entered above. 
   - If JAVA_HOME is not present or has the wrong value assigned, make sure that all the steps above have been followed correctly.  
+
+###Temporary Java environment setup:
+####Using the command line in Windows:
+-This method is good if you want to run both Java 7 and a newer version of Java on your computer
+-This will set up your computer to use Java 7 for anything run in this command window. Once you close the window java will revert to the newest version of Java.
+-In the command prompt enter this command:
+
+      set JAVA_HOME=C:\<enter value of JAVA_HOME found in the above section>
+  
+-Then to make sure the PATH variable is set correctly enter the following into the command prompt:
+
+     set PATH=%JAVA_HOME%\bin;%PATH%
+-Check if you successfully changed the version by typing:
+
+      java -version
+      
+      
+####Using the terminal on a Mac:
+-Open the terminal and type the command:
+
+      /usr/libexec/java_home -v 1.7
+      
+-This will output the path to where java_home for this version is stored.
+Now to set up the JAVA_HOME variable type:
+
+      export JAVA_HOME=(The output of the above step)
+-Check if you successfully changed the version by typing:
+
+      java -version
 
 ##Installing Python
 You will need Python installed on your computer to run this program.
