@@ -106,9 +106,8 @@ Now to set up the JAVA_HOME variable type:
       java -version
 
 ##Installing Python
-You will need Python installed on your computer to run this program.
+You will need Python 2.7 installed on your computer to run this program.
 Python can be found here: https://www.python.org/download/releases/2.7.5/
-or here: https://www.python.org/download/releases/3.2.2/
 
 Instructions on setting up Pyton on your computer can be found here: https://apps.carleton.edu/curricular/cs/resources/source/python_install/
 
