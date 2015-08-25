@@ -13,6 +13,8 @@ DROID is a software tool developed by The National Archives to perform automated
 You can download the newest version of DROID at http://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/
 (Make sure to download the binary file, not the source code).
 
+If you are using an older version of DROID, you will need to check which version of Java it is compatible with. DROID 6.0.1 must be run with Java 6, whereas DROID 6.1.5 can be run with newer versions of Java.
+
 ##Installing DROID (MAC)
 
 - Locate the file "droid-binary-6.1.5-bin.zip" in your downloads folder.
@@ -151,7 +153,7 @@ There there are several options on how to run the program:
 - A directory of bags (folders) to run DROID's analysis on.
 
 ###Output
-- A .droid file containing DROID's analysis in each bag.
-- A .csv file containing DROID's analysis in each bag.
-- A .pdf file containing DROID's analysis in each bag.
-- If it does not already exist, a file named froid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files.
+-A .droid file containing DROID's analysis in the data/meta section of each bag.
+- A .csv file containing DROID's analysis in the data/meta section of each bag.
+- A .pdf file containing DROID's analysis in the data/meta section of each bag.
+- If it does not already exist, a file named droid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files.
