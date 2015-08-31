@@ -15,6 +15,7 @@ import sys
 import platform
 import ast
 import errno
+import time
 
 def readSettingsFile():
     if not os.path.isfile("droid_settings.txt"):
@@ -56,6 +57,7 @@ def usage_message():
     print "Must have Droid installed on your computer"
 
 def main():
+    start_time = time.time()
     #store the original directory so we can navigate back to it at the end of the program
     original_location = os.getcwd()
     parent = ""
@@ -130,6 +132,7 @@ def main():
                 if exception.errno != errno.EEXIST:
                     raise
             full_folder_path = ('"' + full_folder_path + '"')
+            orig_meta = meta_path
             meta_path = ('"' + meta_path + '"')
             profile_path = os.path.join(meta_path, "droid.droid")
             print "--------------------------------------"
@@ -148,10 +151,56 @@ def main():
             cmd = droidName + " -p " + profile_path + " -n \"Comprehensive breakdown\" -r " + os.path.join(meta_path, "droid.pdf")
             os.system(cmd)
             print "--------------------------------------"
+            print "Checking if files were created"
+            print "--------------------------------------"
+            #check if droid.droid was created
+            file_time = 0
+            try:
+                file_time = os.path.getmtime(os.path.join(orig_meta, "droid.droid"))
+            except:
+                print 
+                print "--------------------------------------"
+                print "WARNING" + os.path.join(orig_meta, "droid.droid")+" NOT CREATED"
+                print "--------------------------------------"
+            if file_time != 0:
+                if file_time - start_time < 0:
+                    print "--------------------------------------"
+                    print "WARNING" + os.path.join(orig_meta, "droid.droid") + " NOT UPDATED"
+                    print "--------------------------------------"
+            #check if Droid.csv was created
+            file_time = 0
+            try:
+                file_time = os.path.getmtime(os.path.join(orig_meta, "droid.csv"))
+            except:
+                print "--------------------------------------"
+                print "WARNING" + os.path.join(orig_meta, "droid.csv")+" NOT CREATED"
+                print "--------------------------------------"
+            if file_time != 0:
+                if file_time - start_time < 0:
+                    print "--------------------------------------"
+                    print "WARNING" + os.path.join(orig_meta, "droid.csv")+" NOT UPDATED"
+                    print "--------------------------------------"
+            #check if Droid.pdf was created
+            file_time = 0
+            try:
+                file_time = os.path.getmtime(os.path.join(orig_meta, "droid.pdf"))
+            except:
+                print "--------------------------------------"
+                print "WARNING" + os.path.join(orig_meta, "droid.pdf")+" NOT CREATED"
+                print "--------------------------------------"
+            if file_time != 0:
+                if file_time - start_time < 0:
+                    print "--------------------------------------"
+                    print "WARNING" + os.path.join(orig_meta, "droid.pdf")+" NOT UPDATED"
+                    print "--------------------------------------"
+            print "--------------------------------------"
             print "Validation of " + full_folder_path + " complete"
             print "--------------------------------------"
+           
     print "--------------------------------------"
     print "Validation Complete"
     print "--------------------------------------"
+    
+
     os.chdir(original_location)
 main()
