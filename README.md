@@ -13,28 +13,30 @@ DROID is a software tool developed by The National Archives to perform automated
 You can download the newest version of DROID at http://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/
 (Make sure to download the binary file, not the source code).
 
-If you are using an older version of DROID, you will need to check which version of Java it is compatible with. DROID 6.0.1 must be run with Java 6, whereas DROID 6.1.5 can be run with newer versions of Java.
+If you are using an older version of DROID, you will need to check which version of Java it is compatible with. DROID 6.0.1 must be run with Java 6, whereas DROID 6.4 can be run with newer versions of Java.
 
 ##Installing DROID (MAC)
 
-- Locate the file "droid-binary-6.1.5-bin.zip" in your downloads folder.
+- Locate the file "droid-binary-6.4-bin.zip" in your downloads folder.
 
-- Double click to create the folder "droid-binary-6.1.5-bin". Drag this to the desktop
+- Double click to create the folder "droid-binary-6.4-bin". Drag this to the desktop
 
 - Open a terminal window by navigating to "Applications -> Utilities -> Terminal" and clicking on the Terminal icon.
 
 - In the terminal window, type the following commands exactly as they appear, hitting "return" after each line.
 
-  - cd Desktop/droid-binary-6.1.5-bin
+  - cd Desktop/droid-binary-6.4-bin
   
   - chmod +x droid.sh
   
-  - chmod +x droid-ui-6.1.5.jar
+  - chmod +x droid-ui-6.4.jar
   
-  - chmod +x droid-command-line-6.1.5.jar
+  - chmod +x droid-command-line-6.4.jar
+  
+  - chmod +x droid-ui-6.4.bat
 
 ##Java Versions and DROID
-DROID 6.1.5 requires Java 7 to run
+DROID 6.4 requires Java 7 to run
 If you experience errors with DROID running, and you are using a different version of Java, download and install Java 7.
 
 Java 7 can be found here: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
