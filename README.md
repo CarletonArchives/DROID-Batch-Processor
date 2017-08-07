@@ -15,6 +15,18 @@ You can download the newest version of DROID at http://www.nationalarchives.gov.
 
 If you are using an older version of DROID, you will need to check which version of Java it is compatible with. DROID 6.0.1 must be run with Java 6, whereas DROID 6.4 can be run with newer versions of Java.
 
+##Note Regarding Signature Updates 2017-08-07
+From Developer: The domain apps.nationalarchives.gov.uk was briefly used to provide PRONOM signature files, however this is shortly to be turned off from 28th September 2016. Please ensure that your DROID signature updates are set to retrieve from the following addresses:
+
+Binary signatures:
+http://www.nationalarchives.gov.uk/pronom/service.asmx
+
+Container signatures:
+http://www.nationalarchives.gov.uk/pronom/container-signature.xml
+
+Original thread:
+https://groups.google.com/forum/#!searchin/droid-list/signature%7Csort:date/droid-list/ZM0OyvR7cA8/oEVbfpqFBgAJ
+
 ##Installing DROID (MAC)
 
 - Locate the file "droid-binary-6.4-bin.zip" in your downloads folder.
@@ -159,13 +171,3 @@ There there are several options on how to run the program:
 - A .csv file containing DROID's analysis in the data/meta section of each bag.
 - A .pdf file containing DROID's analysis in the data/meta section of each bag.
 - If it does not already exist, a file named droid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files.
-
-###Note Regarding Signature Updates
-The domain apps.nationalarchives.gov.uk was briefly used to provide PRONOM signature files, however this is shortly to be turned off from 28th September 2016. Please ensure that your DROID signature updates are set to retrieve from the following addresses:
-
-Binary signatures:
-http://www.nationalarchives.gov.uk/pronom/service.asmx
-
-Container signatures:
-http://www.nationalarchives.gov.uk/pronom/container-signature.xml
-
