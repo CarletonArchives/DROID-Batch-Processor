@@ -159,3 +159,13 @@ There there are several options on how to run the program:
 - A .csv file containing DROID's analysis in the data/meta section of each bag.
 - A .pdf file containing DROID's analysis in the data/meta section of each bag.
 - If it does not already exist, a file named droid_settings.txt in the folder containing DroidRunner.py, that contains the path to your DROID program files.
+
+###Note Regarding Signature Updates
+The domain apps.nationalarchives.gov.uk was briefly used to provide PRONOM signature files, however this is shortly to be turned off from 28th September 2016. Please ensure that your DROID signature updates are set to retrieve from the following addresses:
+
+Binary signatures:
+http://www.nationalarchives.gov.uk/pronom/service.asmx
+
+Container signatures:
+http://www.nationalarchives.gov.uk/pronom/container-signature.xml
+
